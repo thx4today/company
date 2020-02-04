@@ -1,0 +1,336 @@
+  
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>:::COMPANY:::</title>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style_ksh.css"><link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+				auto:true,
+				mode:'fade'
+			});
+			var mySlide = $(".slider2").bxSlider({
+				auto:true,
+				pager:false,				
+		      	controls:false,
+				mode:'fade'
+			});			
+	    	$('.nextBtn').click(function(){
+	    		mySlide.goToNextSlide();
+	    	});
+	    	$('.prevBtn').click(function(){
+	    		mySlide.goToPrevSlide();
+	    	});
+		});
+	</script>
+
+</head>
+<body>
+	<header id="main_header">
+		<div id="header_top" class="clearfix">
+			<h1>
+				<a href="#">
+					<img src="images/logo_invers.png" alt="logo" class="logo" 
+					onmouseover="this.src='images/logo.png'"
+					onmouseout="this.src='images/logo_invers.png'">
+				</a>
+			</h1>
+			<nav id="main_menu">
+				<ul class="clearfix">
+					<li><a href="#">체험학교</a></li>
+					<li><a href="#">체험안내</a></li>
+					<li><a href="#">예약안내</a></li>
+					<li><a href="#">커뮤니티</a></li>
+					<li><a href="#">오시는길</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="slider_wrap">
+			<ul class="slider">
+				<li class="slide_1st">
+					<div class="slider_txt">
+						<h3>흙내음 물씬 풍기는<br><span>모꼬지도자기</span>에서 힐링하자</h3>
+						<div class="btn_reserve"><a href="#"><p>예약 바로가기</p></a></div>
+					</div>
+				</li>
+				<li class="slide_2st">
+					<div class="slider_txt">
+						<h3>흙내음 물씬 풍기는<br><span>모꼬지도자기</span>에서 힐링하자</h3>
+						<div class="btn_reserve"><a href="#"><p>예약 바로가기</p></a></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content">
+			<ul class="clearfix">
+				<li class="ct1st" >
+					<a href="#" class="iconLink">
+						<img src="images/icon_01.png" alt="뉴스레터신청하기" class="icon bgImg">
+						<p>뉴스레터 신청하기</p>
+					</a>
+				</li>
+				<li class="ct2st">
+					<a href="#">
+						<div class="cover"></div>
+						<img src="images/andy-kelly-P21tYLUo_PI-unsplash.jpg" alt="영상" class="bgImg">
+						<img src="images/icon01_06.png" alt="영상실행" class="play">
+					</a>
+				</li>
+				<li class="ct3st">
+					<h2>MOKKOZI NEWS</h2>
+					<div class="slider2Wrap">
+						<ul class="slider2">
+							<li class="clearfix">
+								<div class="left">인천의 제조업 회사인 A기업에서 제 12회 사내 워크샵을 모꼬지세라믹이라는 도예수업으로 새롭게 진행하여좋은 반응을 이끌어...</div>
+								<div class="right">
+									<img src="images/content03.jpg" alt="02img">
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="left">인천의 제조업 회사인 A기업에서 제 12회 사내 워크샵을 모꼬지세라믹이라는 도예수업으로 새롭게 진행하여좋은 반응을 이끌어...</div>
+								<div class="right">
+									<img src="images/content0302.jpg" alt="02img">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn clearfix">
+						<img src="images/btn01_01.jpg" alt="prev" class="prevBtn">
+						<img src="images/btn01_02.jpg" alt="next" class="nextBtn">
+					</div>
+				</li>
+				<li class="ct4st">
+					<a href="#" class="iconLink">
+						<img src="images/icon_03.png" alt="회사소개" class="icon bgImg">
+						<p>회사소개</p>
+					</a>
+				</li>
+				<li class="ct5st">
+					<a href="#" class="iconLink">
+						<img src="images/icon_04.png" alt="투자정보" class="icon bgImg">
+						<p>투자정보</p>
+					</a>
+				</li>
+				<li class="ct6st">
+					<a href="#">
+						<img src="images/img_0602.jpg" alt="contant06" class="bgImg">
+						<div class="card">
+							<h3>주중/주말 모꼬지클래스</h3>
+							<p>우리아이들의<br>협업심과 창의력을 키워주는 도예수업</p>
+						</div>
+					</a>
+				</li>
+				<li class="ct7st">
+					<a href="#">
+						<img src="images/img_0701.jpg" alt="" class="bgImg">
+						<div class="card">
+							<h3>주중/주말 모꼬지클래스</h3>
+							<p>숨어있던<br>손끝의 감각에<br>숨을<br>불어넣어 주세요</p>
+						</div>
+					</a>
+				</li>
+				<li class="ct8st">
+					<a href="#">
+						<img src="images/img_0801.jpg" alt="" class="bgImg">
+						<div class="card_dark">
+							<h3>주중/주말 모꼬지클래스</h3>
+							<p>이색데이트 맛집<br>영화<사랑과영혼>찍고오자!</p>
+						</div>
+					</a>
+				</li>
+				<li class="ct9st">
+					<a href="#" class="iconLink">
+						<img src="images/icon_05.png" alt="주요산업" class="icon bgImg">
+						<p>주요산업</p>
+					</a>
+				</li>
+				<li class="ct10st">
+					<a href="#" class="iconLink">
+						<img src="images/icon_06.png" alt="사회공헌활동" class="icon bgImg">
+						<p>사회공헌활동</p>
+					</a>
+				</li>
+				<li class="ct11st">
+					<a href="#">
+						<img src="images/img_1101.jpg" alt="" class="bgImg">
+						<div class="card_dark">
+							<h3>주중/주말 모꼬지클래스</h3>
+							<p>나의 특별한 지인에게,<br>직접 만든 도자기를 선물해 보세요</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<div class="section">
+			<h4>비젼</h4>
+			<p>VISION 2020</p>
+			<ul class="vision clearfix">
+				<li>
+					<div class="card">
+						<img src="images/ico_bus.png" alt="engineering">
+						<div class="card_body">
+							<h3>달리는 도예교실</h3>
+							<p>따로 찾아가지 않아도<br>도예공방, 예술마을의<br> 도자기체험을 즐길 수 있어<br>번거로움을 최소화</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/ico_bus.png" alt="engineering">
+						<div class="card_body">
+							<h3>단체예약</h3>
+							<p>최대 200명까지<br>수용가능한<br>넓고 쾌적한 공방에서<br>단체수업 가능</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/ico_bus.png" alt="engineering">
+						<div class="card_body">
+							<h3>합리적인 가격</h3>
+							<p>다수가 행복하고<br>즐거운 도예 문화를<br>즐기고 만끽할 수 있도록<br>합리적인 가격으로 제공</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="card">
+						<img src="images/ico_bus.png" alt="engineering">
+						<div class="card_body">
+							<h3>맞춤형 주제</h3>
+							<p>다양한 연령층이 꾸준히<br>찾고 있는 만큼 1:1맞춤형<br>주제로 수업진행<br>개개인의 만족감을 최대화</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="section02">
+		<div class="reviewWrap clearfix">
+			<div class="review">
+				<img src="images/ico_review.png" alt="review">
+				<h3>REVIEW</h3>
+				<p>다녀가신 후기를<br>SNS 또는 REVIEW 게시판에<br>남겨주시면 추첨을 통해<br>모꼬지머그컵을<br>보내 드려요</p>
+				<a href="#"><div class="moreBox">more</div></a>
+			</div>
+			<ul class="clearfix">
+				<li>
+					<img src="images/andy-kelly-P21tYLUo_PI-unsplash.jpg" alt="">
+				</li>
+				<li class="colorbox">
+					<h3>가족 나들이겸 들렸던 모꼬지</h3>
+					<p>손으로 무언가만들기좋아하는<br>
+						우리아이들~~<br>
+						지난 주말에 인터넷 검색해서<br>
+						멀지 않은 곳에 있어서 가봤는데<br>
+						너무 좋았어요~~~<br>
+					</p>
+					<div class="boxico">
+						<img src="images/icon02_00.png" alt="">
+						650
+					</div>
+				</li>
+				<li>
+					<img src="images/andy-kelly-P21tYLUo_PI-unsplash.jpg" alt="">
+				</li>
+				<li class="colorbox">
+					<h3>만난지 7년 된 커플이예요</h3>
+					<p>7년 넘게 만나다 보니까<br>
+						매주 이색 적인 데이트 코스<br>
+						찾는게 일이였는데,<br>
+						이번에 모꼬지에서 도자기 체험하면서<br>
+						새로운 데이트를 즐길 수 있었어요
+					</p>
+					<div class="boxico">
+						<img src="images/icon02_00.png" alt="">
+						650
+					</div>
+				</li>
+				<li>
+					<img src="images/andy-kelly-P21tYLUo_PI-unsplash.jpg" alt="">
+				</li>
+				<li class="colorbox">
+					<h3>송년회 겸 회사 워크샵...</h3>
+					<p>매년 술먹고 끝나는 워크샵 대신<br>
+						새롭게 도전해 봤던<br>
+						도자기 굽기 워크샵... <br>
+						기대 안했다..좋았다... <br>
+						직원들이 내년에도 또 가자고 한다... <br>
+						술먹는 건 나만 좋았나보다..ㅎ
+					</p>
+					<div class="boxico">
+						<img src="images/icon02_00.png" alt="">
+						650
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="lastWrap clearfix">
+			<div class="last">
+				<div class="lastTxt">
+					<h2>달리는 도예교실</h3>
+					<p>달리는 도예교실을 신청하면<br>사은품을 드립니다.</p>
+					<a href="#"><div class="click">자세히보기</div></a>
+				</div>
+				<img src="images/img_bus01.png" alt="bus01" class="sun">
+				<img src="images/img_bus03.png" alt="bus03" class="bird">
+				<img src="images/img_bus02.png" alt="bus02" class="animated infinite bounce bus">
+			</div>
+			<div class="last">
+				<div class="lastTxt">
+					<h2>도예 전문 선생님 모집</h3>
+					<p>도예 전문 선생님을 모집합니다.<br>많은 지원 바랍니다.</p>
+					<a href="#" class="la">자세히보기</a>
+				</div>
+				<img src="images/img_instructor.png" alt="instructor">				
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footerBox">
+			<div class="footermenu">
+				<ul class="clearfix">
+					<li>
+						<a href="#">이용약관</a>
+					</li>
+					<li>
+						<a href="#">개인정보취급방침</a>
+					</li>
+					<li>
+						<a href="#">사이트맵</a>
+					</li>
+					<li>
+						<a href="#">고객센터</a>
+					</li>
+					<li>
+						<a href="#">광고 및 제휴문의</a>
+					</li>
+				</ul>
+			</div>
+			<address>
+				<ul class="clearfix">
+					<li>						
+						123-456 서울시 구로구 구로동 구구건물 4층
+					</li>
+					<li>
+						사업자등록번호 : 999-99-999999 대표이사:김수희
+					</li>
+					<li>
+						전화번호 : 00-000-0000
+					</li>
+				</ul><br>
+				COPYRIHTⓒ2020 SOPPIGOING ALL RIGHTS RESERVED.
+			</address>
+		</div>
+	</footer>
+</body>
+</html>

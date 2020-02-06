@@ -320,6 +320,7 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 	.subMenu04 ul li{width: 1260px;}
 
 .subSection{width: 100%;background-color: #fff;padding-top: 20px;}
+.ss_sub0501{height: 1300px;}
 	.subNav{width: 1260px; margin: 0 auto;margin-bottom: 40px;}
 	.subNav ul li{float: left;margin-right: 20px;}
 	.subNav ul li img{width: 30px;}
@@ -333,6 +334,10 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 		background-color: #73160E;margin: 10px auto;margin-bottom: 40px;}
 	.sectionTitle p{font-size: 26px;margin-bottom: 40px;}
 	.sectionTitle span{font-size: 55px; color: #F23E2E; }
+
+	.st_sub0302{height: 150px;}
+
+	.st_sub0501 img{display: block;margin-bottom:0 auto;}
 
 	.content01{width: 1260px;height: 560px;margin: 0 auto;padding: 100px 0px;border-bottom: 2px solid #D0D9D8;}
 	.content01 ul li{width: 420px;float: left;text-align: center;}
@@ -380,6 +385,86 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 							position: absolute;
 							top: 0;left: 0;
 						}
+/*sub04 form*/
+.blind,legend{display: block;position: absolute;left:0;top:-9999px}
+fieldset{
+	border:1px solid #dadada;
+	background-color: #fff;
+	margin-bottom:10px;/*간격을 띄울 때는  ma rgin-top:0;보다 margin-bottom:0을 사용한다;*/
+}
+#wrap{width: 630px;margin: 0 auto;margin-top: 100px;margin-bottom: 100px;}
+#content fieldset .field{
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+}
+#content fieldset .field .inp-field{
+	width: 350px;height: 49px;border:0 none;
+	font-size:16px;color:#999;text-indent:12px;
+}
+
+#content fieldset .field .icon{
+	display: block;width: 97px;height: 48px;
+	_background-color: #f00;position: absolute;
+	top:0;right:10px;text-indent:-9999px;
+	background-image: url(../images/ico_join3.png);
+	background-repeat:no-repeat;
+}
+#content fieldset .field .icon.mail/*ico과mail은★꼭★붙혀써준다*/{background-position:0 -47px;}
+#content fieldset .field .icon.pass/*ico과pw는★꼭★붙혀써준다*/{background-position:0 -466px;}
+#content fieldset .field .icon.pass2/*ico과pw2는★꼭★붙혀써준다*/{background-position:0 -515px;}
+
+#content .btn-area .btn-submit{
+	width: 100%;height: 60px;border: 1px solid #73160E;
+	background:#73160E;
+	text-indent:-9999px;cursor:pointer;
+}
+
+#content fieldset .field .btn-label{
+	display: block;width: 212px;height: 31px;border: 1px solid #dcdcdc;
+	position: absolute;top:8px;text-align: center;line-height:31px;
+	background-color: #fff;cursor:pointer;
+}
+#content fieldset .field .btn-label.male{left:15px;}
+#content fieldset .field .btn-label.female{left:228px;}
+#content fieldset .field.btn-radio{height: 49px;}
+
+#content fieldset .field.btn-radio input{
+	position: relative;left:50px;top:14px; /*위로 올려서 숨기기*/
+}
+
+#content fieldset .field.birth label{
+	float: left;width: 53px;height: 49px;border-right: 1px solid #efefef;
+	text-align: center;line-height: 49px;background-color: #f7f7f7;color:#999;
+}
+#content fieldset .field.birth input,
+#content fieldset .field.confirm input
+{float: left;}
+
+#content fieldset .field.birth select,
+#content fieldset .field.confirm select
+{float: left;
+	width: 110px;height: 29px;border:0 none;font-size:15px;
+	line-height: 29px;
+	background:url(../images/sel_arr.gif) no-repeat 100% 50%;
+	-webkit-appearance:none;margin-top:10px;margin-left:17px;
+}
+#content fieldset .field.birth .field-wall,
+#content fieldset .field.confirm .field-wall
+{
+	float: left;width: 0;height: 29px;border-right: 1px solid #cdcdcd;
+	text-indent:-9999px;margin-top:10px;
+}
+#content fieldset .field.confirm .btn-click{
+	width: 99px;height: 31px;border: 1px solid #dcdcdc;
+	position: absolute;top:7px;right:15px;cursor:pointer;
+	background-color: #fff;
+}
+/*sub05*/
+.adress{width: 1260px;margin-bottom:0 auto;}
+.adress ul li{float: left;width: 33%;text-align: center;}
+.adress ul li img{}
+
+
 }
 
 

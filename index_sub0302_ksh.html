@@ -19,7 +19,7 @@
 </head>
 </head>
 <body>
-	<header id="main_header" class="subHeader sub01">
+	<header id="main_header" class="subHeader sub03">
 		<div id="header_top" class="clearfix">
 			<h1>
 				<a href="index_ksh.html">
@@ -65,145 +65,97 @@
 				<li><a href="#"> 예약하기</a></li>
 			</ul>
 		</div>
-		<div class="sectionTitle">
-			<h3>예약안내</h3>
-			<p>
-				특별한 날 특별한 신탁을 꾸며줄 앙증맞은 귀 모양의 손잡이가 있는<br>
-				유니크하고 고급스러운 사각 접시
-			</p>
-			<span>우드패턴 이어 쉐입 핸들<br>스쿠에어 플레이트</span>
+		<div class="sectionTitle st_sub0302">
+			<h3>예약하기</h3>
 		</div>
-		<div class="content01">
-			<ul class="clearfix">
-				<li class="content0101">
-					<img src="images/icon_sub01.png" alt="아이콘01">
-					<h4>수업일정</h4>
-					<p>
-						매주 토요일 1시, 3시<br>
-						일요일 1시<br>
-						금요일 7시<br>
-						(1회 2시간  수업)
-					</p>
-				</li>
-				<li class="content0102">
-					<img src="images/icon_sub02.png" alt="아이콘02">
-					<h4>체험시</h4>
-					<p>
-						생선구이, 계란말이, 전 종류 등을<br>
-						담을 수 있는 사각형 접시<br>
-						사이즈 : (가로형)22*2.5/(세로형)26*19*2.5<br>
-						메인 음식을 담아도, 다양한 반찬들을<br>
-						조금씩 담아도 넉넉한 사이즈 입니다.  
-					</p>
-				</li>
-				<li class="content0103">
-					<img src="images/icon_sub03.png" alt="아이콘03">
-					<h4>체험인원</h4>
-					<p>
-						최소 인원 2명 이상 부터 진행 가능하며<br>
-						성인 기준 60명 이하까지<br>
-						진행이 가능합니다.
-					</p>
-				</li>
-			</ul>
-		</div>
-		<div class="content02">		
-			<h3>직접 만들어 더욱 애착이 가는 나의 접시</h3>
-			<p>
-				시중에서 10만원에 판매되고 있는 "그림 무유 귀 접시"를 보다 저렴함<br>가격에 만나볼 수 있는 소중한 기회 입니다.
-			</p>
-			<ul class="clearfix">
-				<li>
-					<a href="#">
-						<div class="hoverBox">
-							<div class="hoverTxt">신청하기</div>
+	<div id="wrap">
+		<div id="container">
+			<div id="content">
+				<h2 class="blind">예약하기</h2>
+				<div class="join">
+					<form action="#" method="method">
+						<fieldset>
+							<legend>예약자성함,비밀번호</legend>						
+							<p class="field">
+								<label for="user-id" class="blind">예약자(이름)</label>
+								<input type="text" id="user-id" name="userid" placeholder="예약자(이름)" class="inp-field" required>
+								<span class="icon mail">@naver.com</span>
+							</p>
+							<p class="field">
+								<label for="user-pass" class="blind">비밀번호</label>
+								<input type="password" id="user-pass" name="userpass" placeholder="비밀번호" class="inp-field" required>
+								<span class="icon pass">비밀번호</span>
+							</p>
+							<p class="field">
+								<label for="user-pass2" class="blind">비밀번호 확인</label>
+								<input type="password" id="user-pass2" name="userpass2" placeholder="비밀번호 확인" class="inp-field" required>
+								<span class="icon pass2">비밀번호 확인</span>
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>예약정보</legend>
+							<p class="field">
+								<input type="text" id="username" name="username" class="inp-field w458" placeholder="이름">
+							</p>
+							<p class="field btn-radio">
+								<label for="male" class="btn-label male">성인</label>
+								<input type="radio" id="male" name="user-s" value="남자">
+								<label for="female" class="btn-label female">어린이</label>
+								<input type="radio" id="female" name="user-s" value="어린이">
+							</p>
+							<p class="field birth clearfix">
+								<label for="user-birth">예약일</label>
+								<span class="field-wall">|</span>
+								<select name="month">
+									<option value="1">1월</option>
+									<option value="2">2월</option>
+									<option value="3">3월</option>
+									<option value="4">4월</option>
+									<option value="5">5월</option>
+									<option value="6">6월</option>
+									<option value="7">7월</option>
+									<option value="8">8월</option>
+									<option value="9">9월</option>
+									<option value="10">10월</option>
+									<option value="11">11월</option>
+									<option value="12">12월</option>
+								</select>
+								<span class="field-wall">|</span>
+								<input type="text" placeholder="일" maxlength="2" class="inp-field w145">								
+							</p>						
+							<p class="field">
+								<label for="user-email" class="blind">본인확인메일</label>
+								<input type="text" id="user-email" name="useremail" placeholder="본인확인 이메일(선택)" class="inp-field w458">
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>전화번호인증</legend>
+							<p class="field confirm clearfix">
+								<label for="user-num" class="blind">인증번호받기</label>
+								<select name="usernum" id="user-num">
+									<option value="+82">+82</option>
+								</select>
+								<span class="field-wall">|</span>
+								<input type="text" placeholder="휴대전화번호" class="inp-field w205">
+								<button type="button" class="btn-click">인증</button>
+							</p>
+							<p class="field confirm">
+								<label for="user-confirm" class="blind">인증번호입력</label>
+								<input type="text" id="user-confirm" name="userconfirm" placeholder="인증번호" class="inp-field w303">
+								<button type="button" class="btn-click">확인</button>
+							</p>
+
+						</fieldset>
+
+						<div class="btn-area">
+							<input type="submit" value="예약하기"  class="btn-submit">
 						</div>
-						<ul class="clearfix insideUl">
-							<li>
-								<div class="overlay"></div>
-								<img src="images/img_sub_01.jpg" alt="">
-							</li>
-							<li class="insideLi">
-								<h3>수작업반</h3>
-								<p>도자기공방 모꼬지에서는 어른아이
-									모두가 자연소재인 흙을 주무르고만지며
-									정서적인 안정과 창의력을
-									마음껏 발휘 할 수 있도록 다양한 
-									프로그램을 준비하였습니다. 
-								</p>
-							</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="hoverBox">
-							<div class="hoverTxt">신청하기</div>
-						</div>
-						<ul class="clearfix insideUl">
-							<li>
-								<div class="overlay"></div>
-								<img src="images/img_sub_02.jpg" alt="">
-							</li>
-							<li class="insideLi">
-								<h3>초급반</h3>
-								<p>아이들의 감성 자극과 호기심을 쑥쑥 키우며
-									인생에서  평생 기억 될 수 있는 
-									행복한 시간, 즐거운 추억을 
-									모꼬지에서 만드시길 바랍니다.  
-								</p>
-							</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="hoverBox">
-							<div class="hoverTxt">신청하기</div>
-						</div>
-						<ul class="clearfix insideUl">
-							<li class="insideLi">
-								<h3>상급반</h3>
-								<p>5월 가정의 달을 맞이하여
-									모꼬지에서는 가족체험 행사를
-									진행합니다. 
-									바랍이 살랑살랑 부는 5월
-									가족과 함께 즐거운 추억을
-									만들어 보세요
-								</p>
-							</li>
-							<li class="viewTxt">								
-								<div class="overlay"></div>
-								<img src="images/img_sub_03.jpg" alt="">
-							</li>
-						</ul>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<div class="hoverBox">
-							<div class="hoverTxt">신청하기</div>
-						</div>
-						<ul class="clearfix insideUl">
-							<li class="insideLi">
-								<h3>상급반</h4>
-								<p>5월 가정의 달을 맞이하여
-									모꼬지에서는 가족체험 행사를
-									진행합니다. 
-									바랍이 살랑살랑 부는 5월
-									가족과 함께 즐거운 추억을
-									만들어 보세요
-								</p>
-							</li>
-							<li class="viewTxt">								
-								<div class="overlay"></div>
-								<img src="images/img_sub_04.jpg" alt="">
-							</li>
-						</ul>
-					</a>
-				</li>			
-			</ul>
+					</form>
+				</div>
 			</div>
+		</div>		
+	</div>
+
 	</section>
 	<footer>
 		<div class="footerBox">

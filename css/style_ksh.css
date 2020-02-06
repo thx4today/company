@@ -1,5 +1,7 @@
 @charset "utf-8";
 body{font-family: 'Noto Sans KR', sans-serif;}
+::before, ::after{box-sizing:border-box}
+
 @media screen and (min-width: 960px){
 header#main_header{
 	height: 1950px;_background-color:lightgray;
@@ -12,14 +14,25 @@ header#main_header{
 		top:40px;z-index:1;
 	}
 	#header_top>h1{float: left;height: 50px;}
-	#header_top>h1 a .logo{height: 100%;}
-	#header_top>h1 a .logo{height: 100%;}
+	#header_top>h1 a .logo{height: 100%;text-shadow:0 1px 10px #000;}
 	#main_menu{float: right;}
 	#main_menu{}
 	#main_menu>ul{}
-	#main_menu>ul>li{float: left;height: 50px;}
-	#main_menu>ul>li>a{display: block;line-height:50px;padding:0 30px;color: #fff}
+	#main_menu>ul>li{width: 100px;float: left;height: 50px;position: relative;margin-right: 50px;}
+	#main_menu>ul>li>a{text-shadow:0 1px 10px #000; text-align: center;display: block;line-height:50px;color: #fff;}
+	#main_menu>ul>li>a:after{
+	    content: "";
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    width: 100%;
+	    height: 2px;
+	    background: #F23E2E;
+	    transform: translateX(-50%) scaleX(0);
+	    transition: 0.3s;
+	}
 	#main_menu>ul>li:hover a{color: #F23E2E;transition: .3s;}
+	#main_menu>ul>li:hover a:after{transform:translateX(-50%) scaleX(1);}
 
 	.toggleMenu{}
 
@@ -207,13 +220,14 @@ header#main_header{
 		.last img.bus{top: 60%;left: 50%;}
 /*footer*/
 footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
-	.footerBox{width: 1260px;height: 200px;margin: 0 auto;padding-top: 30px;}
+	.footerBox{width: 1260px;height: 200px;margin: 0 auto;padding-top: 30px;position: relative;}
 	.footerBox .footermenu{width: 1260px;height: 80px;margin: 0 auto;}
 	.footerBox .footermenu ul li{float: left;margin-right: 50px;}
 	.footerBox .footermenu ul li:hover a{color: #D0D9D8;}
 	.footerBox .footermenu ul li a{line-height: 40px;font-weight: bold;color: #fff;}
 	.footerBox address{display: block;font-size:14px;}
 	.footerBox address ul li{float: left;font-style: normal;margin-right: 20px;line-height: 30px;}
+	.footerBox .copyright{width: 1260px;height: 80px;position: absolute;bottom: -30px;}
 .bx-wrapper {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
@@ -222,9 +236,59 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
     background: #fff;
 }
 
-/*sub*/
-.subHeader{
-	background-image: url(../images/dot.png), url(../images/snack-2764876_1920.jpg);
+/*sub 시작*/
+.subHeader.sub01{
+	background-image: url(../images/dot.png), url(../images/bg_sub01.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size:auto,cover;
+	background-position:center;
+	height: 500px !important;
+	position: relative;
+	margin-bottom: 0px !important;
+	min-width: 1260px
+}
+.subHeader.sub02{
+	background-image: url(../images/dot.png), url(../images/bg_sub02.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size:auto,cover;
+	background-position:center;
+	height: 500px !important;
+	position: relative;
+	margin-bottom: 0px !important;
+	min-width: 1260px
+}
+.subHeader.sub03{
+	background-image: url(../images/dot.png), url(../images/bg_sub03.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size:auto,cover;
+	background-position:center;
+	height: 500px !important;
+	position: relative;
+	margin-bottom: 0px !important;
+	min-width: 1260px
+}
+.subHeader.sub04{
+	background-image: url(../images/dot.png), url(../images/bg_sub04.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size:auto,cover;
+	background-position:center;
+	height: 500px !important;
+	position: relative;
+	margin-bottom: 0px !important;
+	min-width: 1260px
+}
+.subHeader.sub05{
+	background-image: url(../images/dot.png), url(../images/bg_sub05.jpg);
+	background-repeat: repeat, no-repeat;
+	background-size:auto,cover;
+	background-position:center;
+	height: 500px !important;
+	position: relative;
+	margin-bottom: 0px !important;
+	min-width: 1260px
+}
+.subHeader.sub02{
+	background-image: url(../images/dot.png), url(../images/bg_sub02.jpg);
 	background-repeat: repeat, no-repeat;
 	background-size:auto,cover;
 	background-position:center;
@@ -247,11 +311,14 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 /*subSection 시작*/
 .subMenuWrap{position: absolute;top:430px;width: 100%;}
 	.subMenu{width: 1260px;margin: 0 auto;text-align: center;}
-		.subMenu ul li{float: left;width: 315px;height: 70px;line-height: 70px;background-color: #fff;border: 1px solid #73160E;border-right: 0;}
-		.subMenu ul li:nth-child(2){background-color:#73160E;}
-		.subMenu ul li:nth-child(2) a{color:#fff;}
-		.subMenu ul li:last-child{border-right: 1px solid #73160E;}
-		.subMenu ul li a{display: block;color: #73160E;}
+	.subMenu ul li{float: left;width: 315px;height: 70px;line-height: 70px;background-color: #fff;border: 1px solid #73160E;border-right: 0;}
+	.subMenu ul li:last-child{border-right: 1px solid #73160E;}
+	.subMenu ul li a{display: block;}
+	.subMenu ul li a.active{display: block;background-color:#73160E;color: #fff;border: none;}
+	
+	.subMenu01 ul li{float: left;width: 630px;height: 70px;line-height: 70px;background-color: #fff;border: 1px solid #73160E;border-right: 0;}
+	.subMenu04 ul li{width: 1260px;}
+
 .subSection{width: 100%;background-color: #fff;padding-top: 20px;}
 	.subNav{width: 1260px; margin: 0 auto;margin-bottom: 40px;}
 	.subNav ul li{float: left;margin-right: 20px;}
@@ -314,6 +381,36 @@ footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 							top: 0;left: 0;
 						}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*max959 미디어쿼리*/
 @media screen and (max-width: 959px){
@@ -521,7 +618,7 @@ header#main_header{
 		.last .lastTxt h2{margin-bottom: 20px;}
 		.last .lastTxt h2:after{content:"";display: block;width: 70px;height: 2px;
 		background-color: #fff;margin-top: 20px;}
-		.last .lastTxt p{margin-bottom: 20px; font-size: 20px}
+		.last .lastTxt p{margin-bottom: 20px; font-size: 20px;}
 		.last .lastTxt a{display: block;width: 250px;height: 60px;border: 1px solid #fff; color: #fff;line-height: 60px;text-align: center;transition: .3s}
 		.last .lastTxt a:hover{border: 1px solid #73160E;background-color: #73160E;}
 		.last .lastTxt a.la:hover {border: 1px solid #F23E2E;background-color: #F23E2E;}

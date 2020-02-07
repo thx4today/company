@@ -10,3 +10,10 @@ a:link,a:visited{color:#000;}
 	background-color:orange;
 	background-image:url(../images/bg_grid.gif);
 }*/
+.bx-wrapper {
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  box-shadow:none;
+  border:0 none;
+  background: none;
+}

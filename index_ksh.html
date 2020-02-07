@@ -2,18 +2,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta charset="UTF-8">
 	<title>:::COMPANY:::</title>
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style_ksh.css"><link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script> 
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider({
+			$(".slider").bxSlider({				
+		      	controls:false,
 				auto:true,
 				mode:'fade'
 			});
@@ -60,9 +62,12 @@
 		<div id="header_top" class="clearfix">
 			<h1>
 				<a href="index_ksh.html">
-					<img src="images/logo_invers.png" alt="logo" class="logo" 
+					<img src="images/logo_invers.png" alt="logo" 
 					onmouseover="this.src='images/logo.png'"
-					onmouseout="this.src='images/logo_invers.png'">
+					onmouseout="this.src='images/logo_invers.png'"
+					class="pclogo">
+					<img src="images/logo_invers.png" alt="" class="mologo">
+
 				</a>
 			</h1>
 			<nav id="main_menu">
@@ -101,7 +106,7 @@
 				<li class="ct1st" >
 					<a href="#" class="iconLink">
 						<img src="images/icon_01.png" alt="뉴스레터신청하기" class="icon bgImg">
-						<p>뉴스레터 신청하기</p>
+						<p>모꼬지소식지</p>
 					</a>
 				</li>
 				<li class="ct2st">
@@ -137,13 +142,13 @@
 				<li class="ct4st">
 					<a href="#" class="iconLink">
 						<img src="images/icon_03.png" alt="회사소개" class="icon bgImg">
-						<p>회사소개</p>
+						<p>체험안내</p>
 					</a>
 				</li>
 				<li class="ct5st">
 					<a href="#" class="iconLink">
 						<img src="images/icon_04.png" alt="투자정보" class="icon bgImg">
-						<p>투자정보</p>
+						<p>예약하기</p>
 					</a>
 				</li>
 				<li class="ct6st">
@@ -176,13 +181,13 @@
 				<li class="ct9st">
 					<a href="#" class="iconLink">
 						<img src="images/icon_05.png" alt="주요산업" class="icon bgImg">
-						<p>주요산업</p>
+						<p>오시는길</p>
 					</a>
 				</li>
 				<li class="ct10st">
 					<a href="#" class="iconLink">
 						<img src="images/icon_06.png" alt="사회공헌활동" class="icon bgImg">
-						<p>사회공헌활동</p>
+						<p>커뮤니티</p>
 					</a>
 				</li>
 				<li class="ct11st">

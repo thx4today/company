@@ -13,7 +13,8 @@ header#main_header{
 		top:40px;z-index:1;
 	}
 	#header_top>h1{float: left;height: 50px;}
-	#header_top>h1 a .logo{height: 100%;text-shadow:0 1px 10px #000;}
+	#header_top>h1 a img.pclogo{display: block;text-shadow:0 1px 10px #000;height: 100%;}
+	#header_top>h1 a img.mologo{display: none;}
 	#main_menu{float: right;}
 	#main_menu{}
 	#main_menu>ul{}

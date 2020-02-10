@@ -16,6 +16,7 @@
 		$(document).ready(function(){
 			$(".slider").bxSlider({				
 		      	controls:false,
+				pager:false,
 				auto:true,
 				mode:'fade'
 			});
@@ -140,19 +141,19 @@
 					</div>
 				</li>
 				<li class="ct4st">
-					<a href="#" class="iconLink">
+					<a href="index_sub0201_ksh.html" class="iconLink">
 						<img src="images/icon_03.png" alt="회사소개" class="icon bgImg">
 						<p>체험안내</p>
 					</a>
 				</li>
 				<li class="ct5st">
-					<a href="#" class="iconLink">
+					<a href="index_sub0301_ksh.html" class="iconLink">
 						<img src="images/icon_04.png" alt="투자정보" class="icon bgImg">
 						<p>예약하기</p>
 					</a>
 				</li>
 				<li class="ct6st">
-					<a href="#">
+					<a href="index_sub0301_ksh.html">
 						<img src="images/img_0602.jpg" alt="contant06" class="bgImg">
 						<div class="card">
 							<h3>주중/주말 모꼬지클래스</h3>
@@ -161,7 +162,7 @@
 					</a>
 				</li>
 				<li class="ct7st">
-					<a href="#">
+					<a href="index_sub0301_ksh.html">
 						<img src="images/img_0701.jpg" alt="" class="bgImg">
 						<div class="card">
 							<h3>주중/주말 모꼬지클래스</h3>
@@ -170,7 +171,7 @@
 					</a>
 				</li>
 				<li class="ct8st">
-					<a href="#">
+					<a href="index_sub0301_ksh.html">
 						<img src="images/img_0801.jpg" alt="" class="bgImg">
 						<div class="card_dark">
 							<h3>주중/주말 모꼬지클래스</h3>
@@ -179,24 +180,29 @@
 					</a>
 				</li>
 				<li class="ct9st">
-					<a href="#" class="iconLink">
+					<a href="index_sub0501_ksh.html" class="iconLink">
 						<img src="images/icon_05.png" alt="주요산업" class="icon bgImg">
 						<p>오시는길</p>
 					</a>
 				</li>
 				<li class="ct10st">
-					<a href="#" class="iconLink">
+					<a href="index_sub0401_ksh.html" class="iconLink">
 						<img src="images/icon_06.png" alt="사회공헌활동" class="icon bgImg">
 						<p>커뮤니티</p>
 					</a>
 				</li>
 				<li class="ct11st">
-					<a href="#">
+					<a href="index_sub0401_ksh.html">
 						<img src="images/img_1101.jpg" alt="" class="bgImg">
 						<div class="card_dark">
 							<h3>주중/주말 모꼬지클래스</h3>
 							<p>나의 특별한 지인에게,<br>직접 만든 도자기를 선물해 보세요</p>
 						</div>
+					</a>
+				</li>
+				<li class="ct12st">
+					<a href="#">
+						<img src="images/img_1101.jpg" alt="" class="bgImg">
 					</a>
 				</li>
 			</ul>
@@ -253,6 +259,11 @@
 				<h3>REVIEW</h3>
 				<p>다녀가신 후기를<br>SNS 또는 REVIEW 게시판에<br>남겨주시면 추첨을 통해<br>모꼬지머그컵을<br>보내 드려요</p>
 				<a href="#"><div class="moreBox">more</div></a>
+			</div>
+			<div class="tbReview">
+				<h3>REVIEW</h3>
+				<p>다녀가신 후기를 SNS 또는 REVIEW 게시판에<br>남겨주시면 추첨을 통해 모꼬지머그컵을 보내 드려요</p>
+				<a href="#"><div class="moreBox">리뷰 쓰기</div></a>
 			</div>
 			<ul class="clearfix">
 				<li>
@@ -327,6 +338,64 @@
 			</div>
 		</div>
 	</div>
+		<!-- ****************** 메인컨텍트(예약하기) ********************** -->
+	<article id="mainContent">
+		<div class="area">
+			<div class="main-contact-con">
+				<h5 class="main-contact-tit">모꼬지 강좌 참여신청</h5>
+				<form name="contact_form" id="contact_form" method="post" action="index_sub0302_ksh.html">
+				<div class="main-contact-inner clearfix">
+					<div class="info">
+						<ul>
+							<li>
+								<div class="clearfix">
+									<span class="tit">이름</span>
+									<input type="text" class="contact-input" name="name" placeholder="신청하실 분의 성함을 입력하세요.">
+								</div>
+							</li>
+							<li>
+								<div class="clearfix">
+									<span class="tit">연락처</span>
+									<input type="text" class="contact-input" name="tel" placeholder="연락처를 '-'없이 입력하세요.">
+								</div>
+							</li>
+							<li>
+								<div class="clearfix">
+									<span class="tit">신청강좌</span>
+									<div class="contact-select-box">
+										<select name="product_idx" id="" class="contact-select">
+											<option value="">신청하실 강좌을 선택하세요.</option>
+												<option value="6">핸드페인팅</option>
+												<option value="6">접시만들기</option>
+												<option value="6">코일링펀칭도자기</option>
+												<option value="6">진로비전표현하기</option>
+										</select>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="contact-privacy-con clearfix">
+							<a href="javascript:;" class="contact-view-btn" onclick="javascript:layerLoad('index_sub0501_ksh.html'); return false;">개인정보처리방침 <i class="xi-search"></i></a>
+							<fieldset class="contact-check-btn">
+								<span class="checkbox-item">
+									<input type="checkbox" id="checkbox02-01" name="agree1">
+									<label for="checkbox02-01">개인정보처리방침에 동의합니다. <i class="xi-check-circle-o"></i></label>        
+								</span>
+							</fieldset>
+						</div>
+					</div>
+					<div class="qna">
+						<p class="tit">문의내용</p>
+						<textarea name="content" class="contact-textarea" placeholder="문의하실 내용을 입력해주세요. (100자 내외)" maxlength="100"></textarea>
+						<button type="submit" class="contact-btn">강좌 신청하기</button>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
 	<footer>
 		<div class="footerBox">
 			<div class="footermenu">

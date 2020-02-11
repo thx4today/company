@@ -110,16 +110,19 @@ header#main_header{
 	}
 	.content > ul > li .card_dark p{color: #260101;font-size:2em;text-align: left;}
 	.content > ul > li:hover .bgImg{transform:scale(1.2)}
+	.content > ul > li.ct2st:hover .cover{position: absolute;z-index: 998;transform:scale(1.2)}
+	.content > ul > li.ct2st:hover img.play{display: none;}
+	.content > ul > li.ct2st:hover img.play{display: none;}
 
 	.content > ul > li.ct1st{background-color:#260101; }
 	.content > ul > li.ct2st{position: relative;overflow: hidden;}
 	.content > ul > li.ct2st img.play{
 		position: absolute;top:50%;left:50%;
-		transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);z-index: 999;
 	}
 	.content > ul > li.ct2st .cover{
 		width: 315px;height: 315px;background-color: rgba(114,22,13,0.5);
-		position: absolute;
+		position: absolute;z-index: 998;
 	}
 	.content > ul > li.ct2st img.bgImg{height: 315px;}
 	.content > ul > li.ct3st{width: 50%;}
@@ -154,6 +157,7 @@ header#main_header{
 	.content > ul > li.ct9st{background-color: #73160E;}
 	.content > ul > li.ct10st{background-color: #F26B5E;}
 	.content > ul > li.ct11st{width: 50%;}
+	.content > ul > li.ct12st{display: none;}
 /*container*/
 .container{
 	height: 750px;
@@ -185,6 +189,7 @@ header#main_header{
 .section02 .reviewWrap .review p{margin-bottom: 50px;}
 .section02 .reviewWrap .review a .moreBox{margin: 0 auto;width: 150px;height: 50px;background-color: rgba(242,106,94,0.6);line-height: 50px;color: #fff}
 .section02 .reviewWrap .review a .moreBox:hover{background-color: #fff;color:#F23E2E;}
+.section02 .reviewWrap .tbReview{display: none;}
 .section02 .reviewWrap ul{width: 945px;float:right;}
 .section02 .reviewWrap ul li{color:#260101;float: left;width: 315px;height: 315px; background-color: #D0D9D8;overflow: hidden;position: relative;}
 .section02 .reviewWrap ul .colorbox{padding: 40px}
@@ -218,6 +223,8 @@ header#main_header{
 			to{left: -50px;top:100px;}
 		}
 		.last img.bus{top: 60%;left: 50%;}
+
+#mainContent{display: none;}
 /*footer*/
 footer{width: 100%;height: 200px;background-color: #260101; color: #fff;}
 	.footerBox{width: 1260px;height: 200px;margin: 0 auto;padding-top: 30px;position: relative;}

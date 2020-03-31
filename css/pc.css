@@ -13,11 +13,12 @@ header#main_header{
 		top:40px;z-index:1;
 	}
 	#header_top>h1{float: left;height: 50px;}
-	#header_top>h1 a img.pclogo{display: block;text-shadow:0 1px 10px #000;height: 100%;}
-	#header_top>h1 a img.mologo{display: none;}
+	#header_top h1 a{width: 40%;display: block;}
+	#header_top h1 a img{width: 100%;}
+	#header_top h1 a img{width: 100%;}
+	#header_top h1 a img.mologo{display: none;}
+
 	#main_menu{float: right;}
-	#main_menu{}
-	#main_menu>ul{}
 	#main_menu>ul>li{width: 100px;float: left;height: 50px;position: relative;margin-right: 50px;}
 	#main_menu>ul>li>a{text-shadow:0 1px 10px #000; text-align: center;display: block;line-height:50px;color: #fff;}
 	#main_menu>ul>li>a:after{
